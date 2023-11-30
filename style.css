@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;900&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --DarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --LightGray: hsl(0, 0%, 98%);
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--LightGray);
+    margin-top: 2rem;
+}
+
+.light {
+    color: var(--GrayishBlue);
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.dark {
+    color: var(--DarkBlue);
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+p {
+    color: var(--GrayishBlue);
+}
+
+h3 {
+    color: var(--DarkBlue);
+}
+
+.top_section {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.section_cards {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card_grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card,
+.card_grp>.card {
+    width: 22rem;
+    height: 220px;
+    padding: 1rem;
+    background-color: white !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card_grp>.card:hover,
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 20%;
+    float: right;
+}
+
+.card:nth-child(1) {
+    border-top: 5px solid var(--Cyan);
+}
+
+.border-top1 {
+    border-top: 5px solid var(--Red) !important;
+}
+
+.border-top2 {
+    border-top: 5px solid var(--Orange) !important;
+}
+
+.border-top3 {
+    border-top: 5px solid var(--Blue) !important;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1145px) {
+.top_section {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.light{
+    font-size: 1.5rem;
+}
+.dark{
+    font-size: 1.5rem;
+}
+    .card,
+    .card_grp>.card {
+        width: 25rem;
+        height: 260px;
+        margin-bottom: 3rem;
+    }
+
+    .card_grp {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+
+    .section_cards {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .card,
+    .card_grp>.card {
+        width: 30rem;
+        height: 300px;
+    }
+
+    .card_grp {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+
+    .section_cards {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    body {
+        /* background-color: rgb(93, 0, 110); */
+        padding: 1rem;
+    }
+
+    .card,
+    .card_grp>.card {
+        width: 20rem;
+        height: 190px;
+        margin: 1rem;
+    }
+
+    .card_grp {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+
+    .section_cards {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    body {
+        /* background-color: rgb(93, 0, 110); */
+        padding: 1rem;
+    }
+
+    .card,
+    .card_grp>.card {
+        width: 17rem;
+        height: 180px;
+        margin: 1rem;
+    }
+
+    .card_grp {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+
+    .section_cards {
+        gap: 1rem;
+        justify-content: center;
+        /* flex-direction: column; */
+    }
+}
